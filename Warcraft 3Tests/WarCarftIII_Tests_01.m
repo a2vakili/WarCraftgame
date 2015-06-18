@@ -28,6 +28,7 @@
     return [[Footman alloc] init];
 }
 
+
 - (void)testHasAndKnowItshealthPoints
 {
     int result = self.footman.healthPoints;

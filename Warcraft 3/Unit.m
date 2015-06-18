@@ -9,5 +9,24 @@
 #import "Unit.h"
 
 @implementation Unit
+- (instancetype)initWithHP: (int) hp AP: (int) ap
+{
+    self = [super init];
+    if (self) {
+        self.healthPoints= hp;
+        self.attackPower= ap;
+        self.damage -= 12;
+    }
+    return self;
+}
+
+- (void)damage:(int)damage{
+    self.damage= damage;
+    self.healthPoints-=12;
+}
+
+- (void)attack:(Unit *)enemy{
+    
+}
 
 @end

@@ -9,5 +9,14 @@
 #import <Foundation/Foundation.h>
 
 @interface Unit : NSObject
+@property (nonatomic) int healthPoints;
+@property (nonatomic) int attackPower;
+@property (nonatomic) int damage;
+
+- (instancetype)initWithHP: (int) hp AP: (int) ap;
+- (void)damage:(int)damage;
+- (void)attack:(Unit *)enemy;
+    
+
 
 @end
